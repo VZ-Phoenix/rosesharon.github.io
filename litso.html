@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ShTyrM">
+    <meta name="keywords" content="ShTyrM, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RoseSharon | Лицо</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css"> 
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="main-menu mobile-menu">
+                        <ul> 
+                            <li><a href="./about-us.html">О нас</a></li>
+                            <li><a href="./index.html">Назад</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Blog Details Hero  Section Begin -->
+    <section class="blog-hero-section set-bg spad" data-setbg="img/sak2.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="bh-text">
+                        <span>Все для лица</span>
+                        <h2>RoseSharon</h2>
+                        <ul>
+                            <li>Обновлено:</li>
+                            <li>24 мая, 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container2 col-lg-6"id="container2">
+        <button class="btn active container2" onclick="filterSelection('all')"> Показать все</button>
+        <button class="btn" onclick="filterSelection('cars')"> Макияж</button>
+        <button class="btn" onclick="filterSelection('animals')"> Увлажнения</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Ощищение</button>
+        <button class="btn" onclick="filterSelection('colors')"> Уход</button>
+        <button class="btn" onclick="filterSelection('colors111')"> мейкап</button>
+        <button class="btn" onclick="filterSelection('colors11')"> Маска</button>
+        <button class="btn" onclick="filterSelection('colors1')"> Мазь</button>
+        <button class="btn" onclick="filterSelection('colors2')"> Крема</button>
+      </div>
+    </section>
+    <!-- Blog Details Hero Section End -->
+      
+      <div class="container2 col-lg-6">
+       <div class="filterDiv col-lg-6 fruits">
+          <div class="blog-item">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <div class="bi-pic set-bg" data-setbg="img/22.jpg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="bi-text">
+                          <h4><a href="./mag.html">Тоналка</a></h4>
+                        <p>Произведено где-то там, короче одним словом зашебись, бери!</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="filterDiv col-lg-6 cars">
+          <div class="blog-item">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <div class="bi-pic set-bg" data-setbg="img/am.jpg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="bi-text">
+                          <h4><a href="./#">Помада</a></h4>
+                        <p>Как-то раз я купил помаду, но жена неправильно поняла и чуть не прибила, покупай!</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="filterDiv col-lg-6 animals">
+          <div class="blog-item">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <div class="bi-pic set-bg" data-setbg="img/13.jpg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="bi-text">
+                          <h4><a href="./#">Пример</a></h4>
+                        <p>что-то о косметике</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="filterDiv col-lg-6 fruits colors">
+          <div class="blog-item">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <div class="bi-pic set-bg" data-setbg="img/333.jpeg"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="bi-text">
+                          <h4><a href="./#">Пример 2</a></h4>
+                        <p>Информация какая-нибудь о косметике</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Добавьте активный класс к текущей кнопке (выделите его)
+      var btnContainer = document.getElementById("container2");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+    <!-- Footer Section Begin -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-option">
+                        <h5 style="color:white;"></br>Поддержка</h5>
+                        <div class="fo-social"> 
+                            <div class="social-share">
+                                <span style="color:white;">Поделиться сайтом:</span>
+                                <a href="https://vk.com/share.php?url=https://shtyrm.github.io/"><i class="fa fa-vk"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://shtyrm.github.io/"><i class="fa fa-telegram"></i></a>
+                                <a href="whatsapp://send?text=https://shtyrm.github.io/"><i class="fa fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <span style="color:white;">Финансовая:<a href="https://www.tinkoff.ru/rm/fayurshin.alfred1/jEk7n77481/"> Тинькоф</a> или <a href="https://www.donationalerts.com/r/ShTyrM">Другие</a></br></span>
+                        </br>
+                        <h5 style="color:white;">Обратная связь</h5> 
+                        <ul>
+                            <li>Адрес: путешествую</li>
+                            <li>Почта: а зачем тебе это?</li>
+                        </ul>
+                        <div class="fo-social">
+                            <a href="https://vk.com/id279250362"><i class="fa fa-vk"></i></a>
+                            <a href="https://t.me/phShTyrM"><i class="fa fa-telegram"></i></a>
+                            <a href="https://wa.me/79656515699"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget fw-links">
+                        <h5>Разделы</h5>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about-us.html">О нас</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="copyright-text"><p>Copyright © Ф.А.Фаюршин, 2023г.</p></div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
