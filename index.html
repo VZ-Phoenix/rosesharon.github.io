@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ShTyrM">
+    <meta name="keywords" content="ShTyrM, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RoseSharon | Косметика</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css"> 
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          type="text/css" href="./style.css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="main-menu mobile-menu">
+                        <ul> 
+                            <li><a href="./about-us.html">О нас</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+      
+    <!-- Blog Details Hero  Section Begin -->
+    <section class="blog-hero-section set-bg spad" data-setbg="img/sak2.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="bh-text">
+                        <span>Все для вас!</span>
+                        <h2>RoseSharon</h2>
+                        <ul>
+                            <li>Обновлено:</li>
+                            <li>24 мая, 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container2 col-lg-6"id="container2">
+        <button class="btn active container2" onclick="filterSelection('all')"> Показать все</button>
+        <button class="btn" onclick="filterSelection('cars')"> Макияж</button>
+        <button class="btn" onclick="filterSelection('ana')"> Увлажнения</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Ощищение</button>
+        <button class="btn" onclick="filterSelection('yx')"> Уход</button>
+        <button class="btn" onclick="filterSelection('meik')"> мейкап</button>
+        <button class="btn" onclick="filterSelection('mask')"> Маска</button>
+        <button class="btn" onclick="filterSelection('maz')"> Мазь</button>
+        <button class="btn" onclick="filterSelection('crem')"> Крема</button>
+      </div>
+      <input id="searchbar" 
+               onkeyup="search_animal()" 
+               type="text" name="search" 
+               placeholder="Поиск товара, категорий">
+    </section>
+
+    <script>
+      function search_animal() {
+      let input = document.getElementById('searchbar').value
+      input = input.toLowerCase();
+      let x = document.getElementsByClassName('animals');
+
+      for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display = "none";
+        }
+        else {
+            x[i].style.display = "list-item";
+          }
+        }
+      }
+    </script>
+
+    <section class="catog">
+      <div class="container22"> 
+          <div class="container2 col-lg-8">
+            <div class="filterDiv col-lg-12 ana">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <h6>ve</h6>
+                    <div class="blog-item">
+                      <div class="row1">
+                        <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-12/722/822/263/291/724/100027555892b0.jpg"></div>
+                        </div>
+                       
+                          <div class="bi-text">
+                            <h4><a href="./mag.html">Missha</a></h4>
+                          <p class="sec">Coreia</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-12 cars">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                        <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="https://avatars.mds.yandex.net/get-mpic/5222613/2a0000018e482571f366e87c7d746d0b7db1/600x800"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                            <h4><a href="./mag.html">Clinique 2в1</a></h4>
+                            <p>Тональный крем, консиллер</p>
+                          </div>
+                       <h6>ve</h6>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-12 yx">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                        <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="https://avatars.mds.yandex.net/get-goods_pic/11462096/hat18d72c039c1a5d427539e53d1d287399/orig"></div>
+                        </div>
+          
+                         <div class="bi-text">
+                             <h4><a href="./mag.html">COLLAGEN</a></h4>
+                            <p> Увлажнение</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 fruits colors">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                        <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="img/333.jpeg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Toshiba</a></h4>
+                            <p>Корея</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 meik">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                        <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="img/234.png"></div>
+                        </div>
+                        
+                         <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                           <p>мейкап</p>
+                         </div>
+                       
+                     </div>
+                   </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 crem">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                       <div class="col-lg-12">
+                         <div class="bi-pic set-bg" data-setbg="img/5.jpg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                            <p>крем</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 maz">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                      <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="img/13.jpg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                           <p>Мазь</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 mask">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                       <div class="col-lg-12">
+                         <div class="bi-pic set-bg" data-setbg="img/6.jpg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                            <p>Маска</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+    <script> 
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Добавьте активный класс к текущей кнопке (выделите его)
+      var btnContainer = document.getElementById("container2");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script> 
+</script>
+
+    <!-- Footer Section Begin -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-option">
+                        <h5 style="color:white;"></br>Поддержка</h5>
+                        <div class="fo-social"> 
+                            <div class="social-share">
+                                <span style="color:white;">Поделиться сайтом:</span>
+                                <a href="https://vk.com/share.php?url=https://shtyrm.github.io/"><i class="fa fa-vk"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://shtyrm.github.io/"><i class="fa fa-telegram"></i></a>
+                                <a href="whatsapp://send?text=https://shtyrm.github.io/"><i class="fa fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <span style="color:white;">Финансовая:<a href="https://www.tinkoff.ru/rm/fayurshin.alfred1/jEk7n77481/"> Тинькоф</a> или <a href="https://www.donationalerts.com/r/ShTyrM">Другие</a></br></span>
+                        </br>
+                        <h5 style="color:white;">Обратная связь</h5> 
+                        <ul>
+                            <li>Адрес: путешествую</li>
+                            <li>Почта: а зачем тебе это?</li>
+                        </ul>
+                        <div class="fo-social">
+                            <a href="https://vk.com/id279250362"><i class="fa fa-vk"></i></a>
+                            <a href="https://t.me/phShTyrM"><i class="fa fa-telegram"></i></a>
+                            <a href="https://wa.me/79656515699"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget fw-links">
+                        <h5>Разделы</h5>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about-us.html">О нас</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="copyright-text"><p>Copyright © Ф.А.Фаюршин, 2023г.</p></div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
