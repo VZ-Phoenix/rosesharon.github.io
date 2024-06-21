@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ShTyrM">
+    <meta name="keywords" content="ShTyrM, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RoseSharon | Косметика</title>
+    <link rel="icon" type="image/x-icon" href="./img/rs.ico">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css"> 
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          type="text/css" href="./style.css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/rs1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="main-menu mobile-menu">
+                        <ul> 
+                            <li><a href="./about-us.html">О нас</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+      
+    <!-- Blog Details Hero  Section Begin -->
+    <section class="blog-hero-section set-bg spad" data-setbg="img/sak2.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="bh-text">
+                        <span>Все для вас!</span>
+                        <h2>RoseSharon</h2>
+                        <ul>
+                            <li>Обновлено:</li>
+                            <li>20 Июня, 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container2 col-lg-6"id="container2">
+        <button class="btn active container2" onclick="filterSelection('all')"> Показать все</button>
+        <button class="btn" onclick="filterSelection('cars')"> Макияж</button>
+        <button class="btn" onclick="filterSelection('ana')"> Увлажнения</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Ощищение</button>
+        <button class="btn" onclick="filterSelection('yx')"> Уход</button>
+        <button class="btn" onclick="filterSelection('meik')"> мейкап</button>
+        <button class="btn" onclick="filterSelection('mask')"> Маска</button>
+        <button class="btn" onclick="filterSelection('maz')"> Мазь</button>
+        <button class="btn" onclick="filterSelection('crem')"> Крема</button>
+      </div>
+      <input id="searchbar" 
+               onkeyup="search_animal()" 
+               type="text" name="search" 
+               placeholder="Поиск товара, категорий">
+    </section>
+
+    <script>
+      function search_animal() {
+      let input = document.getElementById('searchbar').value
+      input = input.toLowerCase();
+      let x = document.getElementsByClassName('animals');
+
+      for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display = "none";
+        }
+        else {
+            x[i].style.display = "list-item";
+          }
+        }
+      }
+    </script>
+
+    <section class="catog">
+      <div class="container22"> 
+          <div class="container2 col-lg-8">
+            <div class="filterDiv col-lg-12 ana">
+                <ul>
+                    <li type="none">
+                        <div class="animals">
+                            <h6>ve</h6>
+                            <div class="blog-item">
+                                <div class="modal" id="my-modal">
+                                    <div class="modal__box">
+                                        <div class="back1">
+                                            <div class="bh-text">
+                                            <span>Missha-тональный крем</span>
+                                            </div>
+
+                                            <p>B.B Boomer от Missha – это крем-основа под макияж, который выравнивает микрорельеф кожи и подготавливает её к нанесению тональных и BB-средств.
+                                            Он заполняет мелкие морщинки, сглаживает неровности, связанные с шелушением и сухостью кожи, скрывает расширенные поры и следы несовершенств.
+                                            С праймером от Missha косметика гладко ложится на кожу, равномерно распределяется и экономичнее расходуется.
+                                            Крем придаёт коже жемчужное, перламутровое сияние и продлевает стойкость макияжа.
+                                            Предотвращает появление мимических морщин и уменьшает воспаления.
+                                            Хорошо подходит для нормальной и сухой кожи лица.
+                                            Активные ингредиенты:
+                                            • Масло семян моринги - защищает кожу от вредных внешних факторов и насыщает её полезными жирными кислотами, токоферолами и протеинами
+                                            • Ниацинамид и аденозин - улучшают местную циркуляцию крови, активизируют процессы регенерации и стимулируют выработку коллагена и эластина
+                                            • Сквалан и маннан - увлажняющие компоненты, которые дополняют и усиливают антивозрастной эффект основы под макияж
+                                            B. B Boomer - ваша идеальная основа под макияж для гладкой и защищённой кожи с деликатным жемчужным сиянием.</p>
+                                        <button><a href="mag.html"><h4>Подробнее</h4></a></button>
+                                    </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="row1" id="row1">
+                        
+                                    <div class="col-lg-12">
+                                        <div class="bi-pic set-bg" data-setbg="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-12/722/822/263/291/724/100027555892b0.jpg"></div>
+                                    </div>
+                       
+                                    <div class="bi-text">
+                                        <h4><a>Missha</a></h4>
+                                        <p class="sec">Coreia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filterDiv col-lg-12 cars">
+                <ul>
+                    <li type="none">
+                        <div class="animals">
+                            <div class="blog-item">
+                                <div class="modal" id="my-modal1">
+                                    <div class="modal__box">
+                                        <div class="back1">
+                                            <div class="bh-text">
+                                            <span>Clinique 2в1</span>
+                                            </div>
+
+                                            <p>Тональный крем и консилер Clinique 2в1 Beyond Perfecting Foundation and Concealer от клиник - стойкое косметическое средство, которое создаёт идеальное покрытие. Стойкий матовый профессиональный матирующий плотный тональный крем представлен в стеклянной баночке с удобным аппликатором.
+                                            Создает естественное безупречное покрытие, маскирует несовершенства, которые сложно скрыть, при этом оставляя ощущение свежести и легкости. Легкая, позволяющая коже дышать формула адаптируется к Вашим потребностям. Особый комплекс ингредиентов, удерживающих влагу, впитывает излишки жира на одних участках и обеспечивает необходимое увлажнение на других. Эта кремовая пудра обеспечивает стойкое равномерное покрытие в течение всего дня, не тускнеет и не скатывается, противостоит воздействию пота и влажности.
+                                            Уникальный аппликатор в форме капли позволит как равномерно распределить средство по всей поверхности лица, так и точечно скорректировать труднодоступные участки.
+                                            Корректор консилер для лица для глаз Может использоваться в качестве в качестве подарка на 8 марта, Новый год (НГ) для мамы, бабушки, жены. Вы также можете найти данное средство по запросам: разглаживатель морщин, косметическое средство, дермокосметика, аптечный крем на водной основе, аптечная уходовая косметика, эмолент, климакс, косметика 40+, 50+, 60+.</p>
+                                            <button><a href="Clinique 2в1.html"><h4>Подробнее</h4></a></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row1" id="row2">    
+                                    <div class="col-lg-12">
+                                        <div class="bi-pic set-bg" data-setbg="https://avatars.mds.yandex.net/get-mpic/5222613/2a0000018e482571f366e87c7d746d0b7db1/600x800"></div>
+                                    </div>
+                        
+                                    <div class="bi-text">
+                                        <h4><a>Clinique 2в1</a></h4>
+                                        <p>Тональный крем, консиллер</p>
+                                    </div>
+                                    <h6>ve</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filterDiv col-lg-12 yx">
+                <ul>
+                    <li type="none">
+                        <div class="animals">
+                            <div class="blog-item">
+                                 <div class="modal" id="my-modal2">
+                                    <div class="modal__box">
+                                        <div class="back1">
+                                            <div class="bh-text">
+                                            <span>Collagen</span>
+                                            </div>
+
+                                            <p>Collagen Moisture Essential Cream — это питательный крем для лица с гидролизованным коллагеном от известного корейского бренда Enough. Он интенсивно увлажняет кожу, разглаживает её, насыщает витаминами, делает цвет лица более здоровым, ярким и насыщенным.<br>Преимущества использования
+                                            Разглаживание. Крем разглаживает текстуру кожи, заполняет морщины, выравнивает овал лица, повышает эластичность и упругость эпидермиса.
+                                            Оздоровление. Крем избавляет кожу от патогенных микроорганизмов, гармонизирует микрофлору, выводит токсины, снимает отёки, ускоряет регенерацию тканей и создаёт защиту от неблагоприятных внешних воздействий.
+                                            Быстрый эффект. Крем моментально насыщает кожу влагой, устраняет чувство стянутости и дискомфорта, улучшает рельеф эпидермиса и придаёт лицу ухоженный и помолодевший вид.
+                                            Экономичность. Гель имеет мягкую, но плотную текстуру. Он быстро впитывается, но экономно расходуется, поэтому прослужит вам очень долго.</p>
+                                            <button><a href="mag.html"><h4>Подробнее</h4></a></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row1" id="row3">
+                                    <div class="col-lg-12">
+                                        <div class="bi-pic set-bg" data-setbg="https://avatars.mds.yandex.net/get-goods_pic/11462096/hat18d72c039c1a5d427539e53d1d287399/orig"></div>
+                                    </div>
+          
+                                    <div class="bi-text">
+                                        <h4><a href="./mag.html">COLLAGEN</a></h4>
+                                        <p> Увлажнение</p>
+                          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filterDiv col-lg-6 fruits colors">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                        <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="img/333.jpeg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Toshiba</a></h4>
+                            <p>Корея</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 meik">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                        <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="img/234.png"></div>
+                        </div>
+                        
+                         <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                           <p>мейкап</p>
+                         </div>
+                       
+                     </div>
+                   </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 crem">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                       <div class="col-lg-12">
+                         <div class="bi-pic set-bg" data-setbg="img/5.jpg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                            <p>крем</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 maz">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                      <div class="col-lg-12">
+                          <div class="bi-pic set-bg" data-setbg="img/13.jpg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                           <p>Мазь</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filterDiv col-lg-6 mask">
+              <ul>
+                <li type="none">
+                  <div class="animals">
+                    <div class="blog-item">
+                      <div class="row1">
+                       <div class="col-lg-12">
+                         <div class="bi-pic set-bg" data-setbg="img/6.jpg"></div>
+                        </div>
+                        
+                          <div class="bi-text">
+                              <h4><a href="./#">Не работает</a></h4>
+                            <p>Маска</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+    <script> 
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Добавьте активный класс к текущей кнопке (выделите его)
+      var btnContainer = document.getElementById("container2");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script> 
+</script>
+
+    <!-- Footer Section Begin -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-option">
+                        <h5 style="color:white;"></br>Поддержка</h5>
+                        <div class="fo-social"> 
+                            <div class="social-share">
+                                <span style="color:white;">Поделиться сайтом:</span>
+                                <a href="https://vk.com/share.php?url=https://shtyrm.github.io/"><i class="fa fa-vk"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://shtyrm.github.io/"><i class="fa fa-telegram"></i></a>
+                                <a href="whatsapp://send?text=https://shtyrm.github.io/"><i class="fa fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <span style="color:white;">Финансовая:<a href="https://www.tinkoff.ru/rm/fayurshin.alfred1/jEk7n77481/"> Тинькоф</a> или <a href="https://www.donationalerts.com/r/ShTyrM">Другие</a></br></span>
+                        </br>
+                        <h5 style="color:white;">Обратная связь</h5> 
+                        <ul>
+                            <li>Адрес: путешествую</li>
+                            <li>Почта: а зачем тебе это?</li>
+                        </ul>
+                        <div class="fo-social">
+                            <a href="https://vk.com/id279250362"><i class="fa fa-vk"></i></a>
+                            <a href="https://t.me/phShTyrM"><i class="fa fa-telegram"></i></a>
+                            <a href="https://wa.me/79656515699"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget fw-links">
+                        <h5>Разделы</h5>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about-us.html">О нас</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="copyright-text"><p>Copyright © Ф.А.Фаюршин, 2023г.</p></div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
